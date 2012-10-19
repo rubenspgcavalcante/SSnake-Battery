@@ -1,0 +1,66 @@
+body{
+    background: #111;
+}
+
+#topbar{
+    background: url("../images/topbar.png") repeat-x scroll 0 0 #444444;
+    height: 90px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -8px;
+    padding-top: 10px;
+}
+
+#topbar .container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 420px;
+}
+
+.battery{
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+}
+
+.battery img{
+    position: absolute;
+}
+
+.battery #battery-bar{
+    z-index: 2;
+    height: 58px;
+    width: 98px;
+    margin-left: 18px;
+    margin-top: 35px;
+}
+
+.battery #battery-front{
+    z-index: 3;
+}
+
+.informations{
+    background: none repeat scroll 0 0 #000000;
+    border: 3px solid #333333;
+    border-radius: 15px 15px 15px 15px;
+    color: #BBBBBB;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 0 1px 2px #222222;
+    width: 230px;
+}
+
+.informations h2{
+    font-size: 18px;
+    font-family: arial;
+}
+
+.informations #battery-low{
+    margin-top: -12px;
+    display: none;
+}

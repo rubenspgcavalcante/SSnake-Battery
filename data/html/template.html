@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+ <!-- path:  projetos/snake_battery/data -->
+<html lang="pt-BR">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Snake Battery</title>
+    <link type="text/css" rel="stylesheet" href="projetos/snake_battery/data/css/style.css?version=%(version)s">
+  </head>
+
+  <body>
+    <div id="topbar">
+      <div class="container">
+        <img src="projetos/snake_battery/data/images/snake-battery-label.png?version=%(version)s">
+      </div>
+    </div>
+    
+    <div class="battery">
+      <img src="projetos/snake_battery/data/images/battery.png?version=%(version)s">
+      <img src="projetos/snake_battery/data/images/battery_bar.png?version=%(version)s" id="battery-bar">
+      <img src="projetos/snake_battery/data/images/battery_front.png?version=%(version)s" id="battery-front">
+    </div>
+    <div class="informations">
+      <h2>Percentagem da bateria:</h2>
+      <p id="batteryLabel"><span id="batteryValue">100</span>%</p>
+      <img id="battery-low" src="projetos/snake_battery/data/images/warning.png">
+    </div>
+  </body>
+  <script type="text/javascript" src="projetos/snake_battery/data/javascript/libs/jquery-1.8.2.min.js"></script>
+
+  <!-- App object -->
+  <script type="text/javascript" src="projetos/snake_battery/data/javascript/App/app.js?version=%(version)s"></script>
+  <script type="text/javascript" src="projetos/snake_battery/data/javascript/App/app.events.js?version=%(version)s"></script>
+  <script type="text/javascript" src="projetos/snake_battery/data/javascript/App/app.utils.js?version=%(version)s"></script>
+
+  <!-- /App object -->
+
+  <script type="text/javascript" src="projetos/snake_battery/data/javascript/main.js?version=%(version)s"></script>
+</html>
