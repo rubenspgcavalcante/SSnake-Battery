@@ -33,6 +33,14 @@ span.ui-btn-inner{
     width: 420px;
 }
 
+#topbar .container span{
+    color: #888888;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px #000;
+    position: absolute;
+    margin-top: 20px;
+}
+
 .content{
     background-color: #222222;
     height: 100%;
