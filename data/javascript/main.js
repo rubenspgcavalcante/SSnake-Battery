@@ -8,9 +8,10 @@ function init(){
 
 $(document).ready(function(){
     
+    App.droid.eventPost("documentReady", null);
+
     try{
         init();
-        App.updateBattery(0);
     }
 
     catch(e){

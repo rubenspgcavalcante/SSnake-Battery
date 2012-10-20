@@ -37,13 +37,18 @@ def generateIndex():
 droid.addOptionsMenuItem('Quit', 'menu-quit', None, "ic_lock_power_off")
 generateIndex()
 droid.webViewShow(baseUrl() + "index.html")
-
+droid.batteryStartMonitoring()
 
 while True:
+    time.sleep(1)
     eventResult = droid.eventWait(10000).result
-    
+        
     if eventResult == None:
         continue
+
+    elif eventResult["name"] == "documentReady":
+        result = droid.batteryGetLevel().result
+        droid.eventPost('batteryLevel', str(result))
     
     elif eventResult["name"] == "say":
         speak(eventResult["data"])
@@ -52,4 +57,5 @@ while True:
         print eventResult["data"];
 
     elif eventResult["name"] == "menu-quit":
+        droid.batteryStopMonitoring()
         break
