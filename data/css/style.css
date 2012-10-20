@@ -43,6 +43,7 @@ span.ui-btn-inner{
 
 .content{
     background-color: #222222;
+    background-image: url("../images/contentbg.png");
     height: 100%;
     position: absolute;
     width: 100%;
@@ -69,6 +70,13 @@ span.ui-btn-inner{
 
 .battery #battery-front{
     z-index: 3;
+}
+
+.centralContainer{
+    bottom:40%;
+    position:absolute;
+    top: auto;
+    width: 100%;
 }
 
 .informations{
