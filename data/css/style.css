@@ -1,5 +1,20 @@
 body{
-    background: #111;
+    background: #222 !important;
+}
+
+
+span.ui-btn-inner{
+    height: 30px !important;
+    font-size: 20px !important;
+    border-radius: 14px;
+}
+
+.footerButons{
+    bottom:0;
+    position:absolute;
+    top: auto;
+    width:100%;
+    background: none;
 }
 
 #topbar{
@@ -16,6 +31,13 @@ body{
     margin-right: auto;
     margin-top: 20px;
     width: 420px;
+}
+
+.content{
+    background-color: #222222;
+    height: 100%;
+    position: absolute;
+    width: 100%;
 }
 
 .battery{
@@ -49,6 +71,7 @@ body{
     height: 80px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 15px;
     padding: 20px;
     text-align: center;
     text-shadow: 0 1px 2px #222222;

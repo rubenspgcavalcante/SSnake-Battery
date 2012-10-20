@@ -24,7 +24,6 @@ App.Events.System = function(){
     var batteryLevel = function(){
         var result = App.droid.eventWaitFor("batteryLevel").result;
         App.droid.eventWait()
-        App.Utils.log(result["data"]);
         App.updateBattery(parseInt(result["data"]));
     };
 
