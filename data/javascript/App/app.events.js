@@ -18,6 +18,24 @@ App.Events.Interface = function(){
         $(document).bind("interface:batteryOk", function(event, data) {
             $("#battery-low").hide();
         });
+
+    /**
+    * Speaks the percentage level of the
+    * battery
+    */
+    var speak = 
+        $("#speakButton").click(function(){
+            App.droid.eventPost("say", null);
+        });
+
+    /**
+    * Exits the application
+    */
+    var quit =
+        $("#quitButton").click(function(){
+           App.droid.eventPost("app-quit", null); 
+        })
+
     };
 
 App.Events.System = function(){
